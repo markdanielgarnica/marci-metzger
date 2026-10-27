@@ -8,6 +8,7 @@ import ListingsSection from './components/ListingsSection'
 import CTASection from './components/CTASection'
 import ContactSection from './components/ContactSection'
 import Footer from './components/Footer'
+import PropertySearchSeaction from './components/PropertySearchSection'
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
         <About />
         <ServicesSection />
         <ListingsSection />
+        <PropertySearchSeaction />
         <CTASection />
         <ContactSection />
       </main>
