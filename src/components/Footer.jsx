@@ -18,7 +18,7 @@ export default function Footer() {
                             HW-160, Suite F</span><span>Pahrump, Nevada 89048</span></div>
                     </div>
                 </div>
-                <div class="footer-bottom"><span>© <span id="year"></span> Marci Metzger Homes. All rights
+                <div class="footer-bottom"><span>© <span>{new Date().getFullYear()}</span> Marci Metzger Homes. All rights
                     reserved.</span><span>Website redesign concept · Original photography retained</span></div>
             </div>
         </footer>

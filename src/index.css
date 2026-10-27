@@ -254,7 +254,8 @@ header {
   width: 44px;
   height: 44px;
   color: var(--ink);
-  font-size: 1.25rem
+  font-size: 1.25rem;
+  cursor: pointer;
 }
 
 .hero {

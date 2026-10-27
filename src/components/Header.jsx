@@ -1,5 +1,12 @@
+import { useState } from 'react';
 import MarciLogo from '../assets/marci-logo.webp';
 export default function Header() {
+    const [isOpen, setIsopen] = useState(false);
+
+    const closeMenu = () => {
+        setIsopen(false);
+    }
+
     return (
         <header>
             <div class="container nav">
@@ -10,13 +17,26 @@ export default function Header() {
                         <span>THE RIDGE REALTY GROUP</span>
                     </span>
                 </a>
-                <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-                <nav class="nav-links" aria-label="Main navigation">
-                    <a href="#home">Home</a>
-                    <a href="#about">Meet Marci</a>
-                    <a href="#services">Services</a>
-                    <a href="#homes">Featured Homes</a>
-                    <a class="btn" href="https://marcimetzger.com/listings">
+                <button
+                    class="menu-toggle"
+                    aria-label="Toggle navigation"
+                    aria-expanded={isOpen}
+                    onClick={() => setIsopen((prev) => !prev)}
+                >
+                    {isOpen ? "×" : "☰"}
+                </button>
+                <nav
+                    className={`nav-links ${isOpen ? "open" : ""}`}
+                    aria-label="Main navigation"
+                >
+                    <a href="#home" onClick={closeMenu}>Home</a>
+                    <a href="#about" onClick={closeMenu}>Meet Marci</a>
+                    <a href="#services" onClick={closeMenu}>Services</a>
+                    <a href="#homes" onClick={closeMenu}>Featured Homes</a>
+                    <a class="btn"
+                        href="https://marcimetzger.com/listings"
+                        onClick={closeMenu}
+                    >
                         Explore Listings
                         <span class="arrow">↗</span>
                     </a>
