@@ -272,7 +272,7 @@ header {
   position: absolute;
   inset: 0;
   z-index: -2;
-  background: url('https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/mtn%20falls%20pond.jpg') center 48%/cover no-repeat;
+  background: url('assets/pond.webp') center 48%/cover no-repeat;
   transform: scale(1.015)
 }
 

@@ -1,9 +1,12 @@
+
+import MarciPhoto from '../assets/marci.webp';
+
 export default function About() {
     return (
         <section class="section" id="about">
             <div class="container intro-grid">
                 <div class="intro-visual">
-                    <img src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/photo-5db79f9.jpg/:/rs=w:900,h:900,cg:true" alt="Marci Metzger Homes original team photograph" loading="lazy" />
+                    <img src={MarciPhoto} alt="Marci Metzger Homes original team photograph" loading="lazy" />
                     <div class="image-caption">
                         <span>Local expertise</span>
                         <strong>Experience you can lean on.</strong>

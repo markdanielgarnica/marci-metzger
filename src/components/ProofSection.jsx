@@ -1,4 +1,4 @@
-export default function ProofSection () {
+export default function ProofSection() {
     return (
         <section class="proof">
             <div class="container proof-grid">
@@ -6,7 +6,7 @@ export default function ProofSection () {
                     <div class="proof-icon">⌂</div>
                     <div>
                         <strong>Nearly 3 decades</strong>
-                            <span>Of real estate experience</span>
+                        <span>Of real estate experience</span>
                     </div>
                 </div>
                 <div class="proof-item">
