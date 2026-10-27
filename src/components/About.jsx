@@ -19,14 +19,14 @@ export default function About() {
                         <span class="signature">Marci Metzger</span>
                         <span class="signoff-rule"></span>
                         <div>
-                        <small>Real estate professional</small>
-                        <small>Pahrump, Nevada</small>
+                            <small>Real estate professional</small>
+                            <small>Pahrump, Nevada</small>
+                        </div>
                     </div>
-                </div>
-                <a class="btn btn-outline" href="https://marcimetzger.com/about-us">Get to Know Marci <span class="arrow">→</span></a>
+                    <a class="btn btn-outline" href="https://marcimetzger.com/about-us">Get to Know Marci <span class="arrow">→</span></a>
                 </div>
             </div>
         </section>
-    
+
     );
 }
